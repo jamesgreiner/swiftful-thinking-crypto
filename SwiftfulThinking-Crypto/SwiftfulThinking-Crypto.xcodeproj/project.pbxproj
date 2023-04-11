@@ -11,6 +11,7 @@
 		43DCDF3729E4E9BC00E94A33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCDF3629E4E9BC00E94A33 /* ContentView.swift */; };
 		43DCDF3929E4E9BD00E94A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DCDF3829E4E9BD00E94A33 /* Assets.xcassets */; };
 		43DCDF3C29E4E9BD00E94A33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DCDF3B29E4E9BD00E94A33 /* Preview Assets.xcassets */; };
+		43DCDF4429E4EF2000E94A33 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCDF4329E4EF2000E94A33 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		43DCDF3629E4E9BC00E94A33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43DCDF3829E4E9BD00E94A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43DCDF3B29E4E9BD00E94A33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43DCDF4329E4EF2000E94A33 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		43DCDF3329E4E9BC00E94A33 /* SwiftfulThinking-Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				43DCDF4229E4EF0300E94A33 /* Extensions */,
 				43DCDF3429E4E9BC00E94A33 /* SwiftfulThinking_CryptoApp.swift */,
 				43DCDF3629E4E9BC00E94A33 /* ContentView.swift */,
 				43DCDF3829E4E9BD00E94A33 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				43DCDF3B29E4E9BD00E94A33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43DCDF4229E4EF0300E94A33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43DCDF4329E4EF2000E94A33 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				43DCDF3729E4E9BC00E94A33 /* ContentView.swift in Sources */,
 				43DCDF3529E4E9BC00E94A33 /* SwiftfulThinking_CryptoApp.swift in Sources */,
+				43DCDF4429E4EF2000E94A33 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +282,12 @@
 				DEVELOPMENT_TEAM = 9RNRK67FA6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +312,12 @@
 				DEVELOPMENT_TEAM = 9RNRK67FA6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
