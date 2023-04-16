@@ -40,6 +40,11 @@ struct PortfolioView: View {
                     trailingNavBarButtons
                 }
             }
+            .onChange(of: vm.searchText) { newValue in
+                if newValue.isEmpty {
+                    removeSelectedCoin()
+                }
+            }
         }
     }
 }
@@ -81,13 +86,13 @@ extension PortfolioView {
     private var coinLogoList: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 10) {
-                ForEach(vm.allCoins) { coin in
+                ForEach(vm.searchText.isEmpty ? vm.portfolioCoins : vm.allCoins) { coin in
                     CoinLogoView(coin: coin)
                         .frame(width: 75)
                         .padding(4)
                         .onTapGesture {
                             withAnimation(.easeIn) {
-                                selectedCoin = coin
+                                updateSelectedCoin(coin: coin)
                             }
                         }
                         .background(
@@ -102,6 +107,18 @@ extension PortfolioView {
             .frame(height: 120)
             .padding(.leading)
         }
+    }
+    
+    private func updateSelectedCoin(coin: CoinModel) {
+        selectedCoin = coin
+        
+        if let portfolioCoin = vm.portfolioCoins.first(where: { $0.id == coin.id }), let amount = portfolioCoin.currentHoldings {
+            quantityText = "\(amount)"
+        }
+        else {
+            quantityText = ""
+        }
+        
     }
     
     private func getCurrentValue() -> Double {
@@ -136,10 +153,10 @@ extension PortfolioView {
     }
     
     private func saveButtonPressed() {
-        guard let coin = selectedCoin else { return }
+        guard let coin = selectedCoin, let amount = Double(quantityText) else { return }
         
         // Save to portfolio
-        
+        vm.updatePortfolio(coin: coin, amount: amount)
         
         // Show checkmark
         withAnimation(.easeIn) {
@@ -151,7 +168,7 @@ extension PortfolioView {
         UIApplication.shared.endEditing()
         
         // Hide checkmark
-        DispatchQueue.main.asyncAfter(deadline: .now + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             withAnimation(.easeOut) {
                 showCheckmark = false
             }

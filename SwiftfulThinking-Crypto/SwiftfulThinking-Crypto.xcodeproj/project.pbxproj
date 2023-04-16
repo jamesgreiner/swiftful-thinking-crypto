@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		43570F5629EA3D1B00BDBF42 /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43570F5529EA3D1B00BDBF42 /* CoinLogoView.swift */; };
+		43570F5929EA6DF000BDBF42 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43570F5729EA6DF000BDBF42 /* PortfolioContainer.xcdatamodeld */; };
+		43570F5B29EA6E8A00BDBF42 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43570F5A29EA6E8A00BDBF42 /* PortfolioDataService.swift */; };
 		43AEEA9629E928EC006B05F9 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AEEA9529E928EC006B05F9 /* PortfolioView.swift */; };
 		43AEEA9829E92B6A006B05F9 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AEEA9729E92B6A006B05F9 /* XMarkButton.swift */; };
 		43B507A129E523300000C045 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B507A029E523300000C045 /* HomeView.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		43570F5529EA3D1B00BDBF42 /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
+		43570F5829EA6DF000BDBF42 /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
+		43570F5A29EA6E8A00BDBF42 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		43AEEA9529E928EC006B05F9 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		43AEEA9729E92B6A006B05F9 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		43B507A029E523300000C045 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 				43B507A929E539660000C045 /* CoinModel.swift */,
 				43B507C929E8EE250000C045 /* StatisticModel.swift */,
 				43B507CF29E919630000C045 /* MarketDataModel.swift */,
+				43570F5729EA6DF000BDBF42 /* PortfolioContainer.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				43B507B429E66B010000C045 /* CoinDataService.swift */,
 				43B507BC29E7A0380000C045 /* CoinImageService.swift */,
 				43B507D129E91C420000C045 /* MarketDataService.swift */,
+				43570F5A29EA6E8A00BDBF42 /* PortfolioDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43570F5929EA6DF000BDBF42 /* PortfolioContainer.xcdatamodeld in Sources */,
 				43B507CA29E8EE250000C045 /* StatisticModel.swift in Sources */,
 				43B507B529E66B020000C045 /* CoinDataService.swift in Sources */,
 				43B507AC29E633B30000C045 /* CoinRowView.swift in Sources */,
@@ -335,6 +342,7 @@
 				43B507B029E639F20000C045 /* Double.swift in Sources */,
 				43B507BD29E7A0380000C045 /* CoinImageService.swift in Sources */,
 				43B507AA29E539660000C045 /* CoinModel.swift in Sources */,
+				43570F5B29EA6E8A00BDBF42 /* PortfolioDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +545,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		43570F5729EA6DF000BDBF42 /* PortfolioContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				43570F5829EA6DF000BDBF42 /* PortfolioContainer.xcdatamodel */,
+			);
+			currentVersion = 43570F5829EA6DF000BDBF42 /* PortfolioContainer.xcdatamodel */;
+			path = PortfolioContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 43DCDF2929E4E9BC00E94A33 /* Project object */;
 }
