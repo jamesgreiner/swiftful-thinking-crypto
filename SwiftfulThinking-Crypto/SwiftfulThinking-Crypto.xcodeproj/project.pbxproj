@@ -11,6 +11,7 @@
 		43570F5929EA6DF000BDBF42 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43570F5729EA6DF000BDBF42 /* PortfolioContainer.xcdatamodeld */; };
 		43570F5B29EA6E8A00BDBF42 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43570F5A29EA6E8A00BDBF42 /* PortfolioDataService.swift */; };
 		4362E7ED29F0ED6A00E6E768 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4362E7EC29F0ED6A00E6E768 /* HapticManager.swift */; };
+		4362E7F229F77B7000E6E768 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4362E7F129F77B7000E6E768 /* DetailView.swift */; };
 		43AEEA9629E928EC006B05F9 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AEEA9529E928EC006B05F9 /* PortfolioView.swift */; };
 		43AEEA9829E92B6A006B05F9 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AEEA9729E92B6A006B05F9 /* XMarkButton.swift */; };
 		43B507A129E523300000C045 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B507A029E523300000C045 /* HomeView.swift */; };
@@ -46,6 +47,7 @@
 		43570F5829EA6DF000BDBF42 /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
 		43570F5A29EA6E8A00BDBF42 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		4362E7EC29F0ED6A00E6E768 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		4362E7F129F77B7000E6E768 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		43AEEA9529E928EC006B05F9 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		43AEEA9729E92B6A006B05F9 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		43B507A029E523300000C045 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -88,11 +90,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4362E7EE29F77B1500E6E768 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4362E7EF29F77B2600E6E768 /* ViewModels */,
+				4362E7F029F77B3200E6E768 /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		4362E7EF29F77B2600E6E768 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4362E7F029F77B3200E6E768 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4362E7F129F77B7000E6E768 /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		43B5079C29E522EC0000C045 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				43B507A229E5247B0000C045 /* Components */,
 				43B5079D29E522F50000C045 /* Home */,
+				4362E7EE29F77B1500E6E768 /* Detail */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -333,6 +360,7 @@
 				43B507C829E8D4CB0000C045 /* UIApplication.swift in Sources */,
 				43B507A529E5262A0000C045 /* CircleButtonView.swift in Sources */,
 				43DCDF4429E4EF2000E94A33 /* Color.swift in Sources */,
+				4362E7F229F77B7000E6E768 /* DetailView.swift in Sources */,
 				4362E7ED29F0ED6A00E6E768 /* HapticManager.swift in Sources */,
 				43B507C629E8CEFC0000C045 /* SearchBarView.swift in Sources */,
 				43B507B829E788230000C045 /* NetworkingManager.swift in Sources */,
