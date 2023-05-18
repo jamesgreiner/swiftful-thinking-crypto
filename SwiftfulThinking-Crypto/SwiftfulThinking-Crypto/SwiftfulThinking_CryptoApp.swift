@@ -13,8 +13,10 @@ struct SwiftfulThinkingCryptoApp: App {
     @State private var showLaunchView: Bool = true
     
     init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor : UIColor(.theme.accent)]
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor(.theme.accent)]
+        UINavigationBar.appearance().tintColor = UIColor(.theme.accent)
+        UITableView.appearance().backgroundColor = UIColor.clear
     }
     
     var body: some Scene {
@@ -24,6 +26,7 @@ struct SwiftfulThinkingCryptoApp: App {
                     HomeView()
                         .navigationBarHidden(true)
                 }
+                .navigationViewStyle(.stack)
                 .environmentObject(vm)
                 
                 ZStack {

@@ -31,6 +31,10 @@ struct PortfolioView: View {
                 .padding()
                 .font(.headline)
             }
+            .background(
+                Color.theme.background
+                    .ignoresSafeArea()
+            )
             .navigationTitle("Edit Portfolio")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -71,7 +75,7 @@ extension PortfolioView {
                 .opacity(showCheckmark ? 1.0 : 0.0)
             
             Button {
-                
+                saveButtonPressed()
             } label: {
                 Text("Save".uppercased())
             }
