@@ -45,7 +45,6 @@
 		43B507D029E919630000C045 /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B507CF29E919630000C045 /* MarketDataModel.swift */; };
 		43B507D229E91C430000C045 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B507D129E91C420000C045 /* MarketDataService.swift */; };
 		43DCDF3529E4E9BC00E94A33 /* SwiftfulThinking_CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCDF3429E4E9BC00E94A33 /* SwiftfulThinking_CryptoApp.swift */; };
-		43DCDF3729E4E9BC00E94A33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCDF3629E4E9BC00E94A33 /* ContentView.swift */; };
 		43DCDF3929E4E9BD00E94A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DCDF3829E4E9BD00E94A33 /* Assets.xcassets */; };
 		43DCDF3C29E4E9BD00E94A33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DCDF3B29E4E9BD00E94A33 /* Preview Assets.xcassets */; };
 		43DCDF4429E4EF2000E94A33 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DCDF4329E4EF2000E94A33 /* Color.swift */; };
@@ -91,7 +90,6 @@
 		43B507D129E91C420000C045 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		43DCDF3129E4E9BC00E94A33 /* SwiftfulThinking-Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftfulThinking-Crypto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DCDF3429E4E9BC00E94A33 /* SwiftfulThinking_CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinking_CryptoApp.swift; sourceTree = "<group>"; };
-		43DCDF3629E4E9BC00E94A33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43DCDF3829E4E9BD00E94A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43DCDF3B29E4E9BD00E94A33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43DCDF4329E4EF2000E94A33 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -305,7 +303,6 @@
 				43B507A829E539410000C045 /* Models */,
 				43B5079C29E522EC0000C045 /* Core */,
 				43DCDF3429E4E9BC00E94A33 /* SwiftfulThinking_CryptoApp.swift */,
-				43DCDF3629E4E9BC00E94A33 /* ContentView.swift */,
 				43DCDF3829E4E9BD00E94A33 /* Assets.xcassets */,
 				43DCDF3A29E4E9BD00E94A33 /* Preview Content */,
 			);
@@ -412,7 +409,6 @@
 				43AEEA9829E92B6A006B05F9 /* XMarkButton.swift in Sources */,
 				43B507B229E651D70000C045 /* HomeViewModel.swift in Sources */,
 				4301E7CF2A132E7F00719D97 /* Date.swift in Sources */,
-				43DCDF3729E4E9BC00E94A33 /* ContentView.swift in Sources */,
 				43B507C129E7BF850000C045 /* LocalFileManager.swift in Sources */,
 				43B507D029E919630000C045 /* MarketDataModel.swift in Sources */,
 				43B507A129E523300000C045 /* HomeView.swift in Sources */,

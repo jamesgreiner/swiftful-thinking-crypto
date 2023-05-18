@@ -42,8 +42,15 @@ struct HomeView: View {
                     .transition(.move(edge: .leading))
                 }
                 if showPortfolio {
-                    portfolioCoinsList
-                        .transition(.move(edge: .trailing))
+                    ZStack(alignment: .top) {
+                        if vm.portfolioCoins.isEmpty && vm.searchText.isEmpty {
+                            portfolioEmptyText
+                        }
+                        else {
+                            portfolioCoinsList
+                        }
+                    }
+                    .transition(.move(edge: .trailing))
                 }
                 
                 Spacer(minLength: 0)
@@ -111,6 +118,7 @@ extension HomeView {
             ForEach(vm.allCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColumn: false)
                     .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .listRowBackground(Color.theme.background)
                     .onTapGesture {
                         segue(coin: coin)
                     }
@@ -124,12 +132,22 @@ extension HomeView {
             ForEach(vm.portfolioCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColumn: true)
                     .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .listRowBackground(Color.theme.background)
                     .onTapGesture {
                         segue(coin: coin)
                     }
             }
         }
         .listStyle(.plain)
+    }
+    
+    private var portfolioEmptyText: some View {
+        Text("You haven't added any coins to your portfolio yet. Click the plus button to get started! 🧐")
+            .font(.callout)
+            .foregroundColor(.theme.accent)
+            .fontWeight(.medium)
+            .multilineTextAlignment(.center)
+            .padding(50)
     }
     
     private func segue(coin: CoinModel) {
